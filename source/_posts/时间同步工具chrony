@@ -1,5 +1,5 @@
 ---
-title: centos8干掉了ntpdate而选择了更为先进的chrony作为时间同步工具，其中原因是什么？
+title: 时间同步工具chrony
 date: 2021-11-01 16:48:55
 tags: centos
 categories: 技术
