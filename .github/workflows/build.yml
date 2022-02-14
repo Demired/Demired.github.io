@@ -20,7 +20,7 @@ jobs:
       with:
         node-version: '7.10.0'
     
-    - name: Node install
+    - name: Install Dependencies
       run: npm install
 
     # Deploy hexo blog website.
