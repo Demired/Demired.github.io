@@ -15,8 +15,10 @@ jobs:
       with:
         submodules: true # Checkout private submodules(themes or something else).
     
-    - name: Install Node
+    - name: Setup Node
       uses: actions/setup-node@v7.10.0
+      with:
+        node-version: '7.10.0'
     
     - name: Node install
       run: npm install
