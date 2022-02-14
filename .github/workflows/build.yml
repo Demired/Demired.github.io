@@ -15,9 +15,12 @@ jobs:
       with:
         submodules: true # Checkout private submodules(themes or something else).
     
-    - name: Install Dependencies
-      run: npm install
+    - name: Install Node
+      uses: actions/setup-node@v7.10.0
     
+    - name: Node install
+      run: npm install
+
     # Deploy hexo blog website.
     - name: Deploy
       id: deploy
