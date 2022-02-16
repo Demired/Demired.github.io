@@ -29,7 +29,7 @@ jobs:
       
     - name: Install Hexo
       run: |
-        npm install hexo-cli@3.22 -g
+        npm install hexo@3.22 -g
         
     - name: Checkout
       uses: actions/checkout@v1
