@@ -43,7 +43,8 @@ jobs:
         git checkout --orphan temporary
         git reset
         git add public -f
-        ls -la .
+        sudo chmod –R 777 public
+        ls -la
         git mv ./public/index.html ./public/index1.html -f
         git commit -m 'new branch'
         
