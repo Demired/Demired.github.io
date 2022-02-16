@@ -34,12 +34,17 @@ jobs:
     - name: Install Dependencies
       run: npm install
       
-    - name: Deploy
-      id: deploy
-      uses: Demired/hexo-action@v1.0.4
+    - name: Install Hexo
+      run: |
+        npm install hexo-cli -g
+        npm install hexo-deployer-git --save
+        
+    - name: Hexo build
+      run: hexo g
     
     - name: Commit files
       run: |
+        ls -la
         git checkout --orphan temporary
         ls -la
         git reset
