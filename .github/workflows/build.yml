@@ -41,7 +41,7 @@ jobs:
     - name: Commit files
       run: |
         git checkout --orphan temporary
-        git rm -rf .(public)
+        git rm -rf !(public)
         mv -rf ./public/* .
         git commit -m "Add changes" -a
         
