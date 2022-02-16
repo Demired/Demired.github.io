@@ -10,11 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to deploy blog.
     steps:
-    - name: Checkout
-      uses: actions/checkout@v1
-      with:
-        submodules: true # Checkout private submodules(themes or something else).
-        
+    
     - name: Configuration environment
       env:
           HEXO_DEPLOY_PRI: ${{secrets.DEPLOY_KEY}}
@@ -38,6 +34,11 @@ jobs:
       run: |
         npm install hexo-cli -g
         npm install hexo-deployer-git --save
+        
+    - name: Checkout
+      uses: actions/checkout@v1
+      with:
+        submodules: true # Checkout private submodules(themes or something else).
         
     - name: Hexo build
       run: |
