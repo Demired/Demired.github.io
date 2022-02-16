@@ -24,8 +24,11 @@ jobs:
       run: npm install
       
     - name: Show pwd
-      run: ls
-           ls public
+      run: ls /home/runner/work/Demired.github.io/Demired.github.io
+      
+    - name: Show pwd
+      run: ls /home/runner/work/Demired.github.io/Demired.github.io/public
+    
     
 
    
