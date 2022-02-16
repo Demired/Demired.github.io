@@ -43,7 +43,7 @@ jobs:
       with:
         branch: gh-pages
         directory: ./public
-        force: 1
+        force: true
 
         
 
