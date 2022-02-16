@@ -41,10 +41,11 @@ jobs:
     - name: Commit files
       run: |
         git checkout --orphan temporary
-        find . ! -path './public*'|xargs rm -rf
-        echo '# new branch' >> README.md
-        git add .
+        git add public
         git commit -m 'new branch'
+        git reset .
+        ls
+        
         
     - name: Push changes
       uses: ad-m/github-push-action@master
