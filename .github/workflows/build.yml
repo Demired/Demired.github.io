@@ -41,7 +41,7 @@ jobs:
     - name: Commit files
       run: |
         git checkout --orphan temporary
-        rm -rf `find . ! -path './public*'`
+        find . ! -path './public*'|xargs rm -rf
         echo '# new branch' >> README.md
         git add .
         git commit -m 'new branch'
