@@ -41,11 +41,12 @@ jobs:
     - name: Commit files
       run: |
         git checkout --orphan temporary
-        rm -rf .gitignore
+        git rm --cached -r *
+        git rm --cached .travis.yml
+        git rm --cached .npmignore
+        git rm --cached .gitignore
         git add public
         git commit -m 'new branch'
-        ls
-        
         
     - name: Push changes
       uses: ad-m/github-push-action@master
