@@ -23,14 +23,19 @@ jobs:
     - name: Install Dependencies
       run: npm install
       
-    - name: Hexo g
-      run: hexo g
+    - name: Deploy
+      id: deploy
+      uses: sma11black/hexo-action@v1.0.3
+      with:
+        deploy_key: ${{ secrets.DEPLOY_KEY }}
+        user_name: zhangyuan
+        user_email: zhangyuan@newyou.ltd
+        commit_msg: ${{ github.event.head_commit.message }}
       
     - name: Show pwd
       run: ls /home/runner/work/Demired.github.io/Demired.github.io
       
-    - name: Show pwd
-      run: ls /home/runner/work/Demired.github.io/public
+
     
     
 
