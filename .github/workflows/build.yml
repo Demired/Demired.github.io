@@ -30,10 +30,17 @@ jobs:
         deploy_key: ${{ secrets.DEPLOY_KEY }}
         user_name: zhangyuan
         user_email: zhangyuan@newyou.ltd
-        commit_msg: ${{ github.event.head_commit.message }}
       
     - name: Show pwd
-      run: ls /home/runner/work/Demired.github.io/Demired.github.io
+      run: 
+          cd /home/runner/work/Demired.github.io/Demired.github.io/public
+          - git init
+          - git config user.name "zhangyuan"
+          - git config user.email "zhangyuan@newyou.ltd"
+          - git add .
+          - git commit -m "Update docs"
+          - git push --force --quiet "git@github.com:Demired/Demired.github.io.git" master:gh-pages
+           
       
 
     
