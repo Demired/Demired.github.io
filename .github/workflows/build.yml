@@ -10,7 +10,11 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to deploy blog.
     steps:
-    
+    - name: Checkout
+      uses: actions/checkout@v1
+      with:
+        submodules: true # Checkout private submodules(themes or something else).
+        
     - name: Configuration environment
       env:
           HEXO_DEPLOY_PRI: ${{secrets.DEPLOY_KEY}}
@@ -26,26 +30,17 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: '7.10.0'
+    
+    - name: Install Dependencies
+      run: npm install
       
-    - name: Install Hexo
-      run: |
-        npm install -g --save hexo@3.2.2
-        
-    - name: Checkout
-      uses: actions/checkout@v1
-      with:
-        submodules: true # Checkout private submodules(themes or something else).
-        
-    - name: Hexo build
-      run: |
-        ls -la
-        hexo g -d
+    - name: Deploy
+      id: deploy
+      uses: Demired/hexo-action@v1.0.4
     
     - name: Commit files
       run: |
-        ls -la
         git checkout --orphan temporary
-        ls -la
         git reset
         git add public -f
         git commit -m 'new branch'
@@ -55,10 +50,3 @@ jobs:
       with:
         branch: gh-pages
         force: true
-
-        
-
-    
-  
-
-   
