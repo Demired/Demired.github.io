@@ -43,6 +43,7 @@ jobs:
         git checkout --orphan temporary
         git reset
         git add public -f
+        git mv public/* . -f
         git commit -m 'new branch'
         
     - name: Push changes
