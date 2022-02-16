@@ -32,15 +32,7 @@ jobs:
         user_email: zhangyuan@newyou.ltd
       
     - name: Show pwd
-      run: 
-          cd /home/runner/work/Demired.github.io/Demired.github.io/public
-          - git init
-          - git config user.name "zhangyuan"
-          - git config user.email "zhangyuan@newyou.ltd"
-          - git add .
-          - git commit -m "Update docs"
-          - git push --force --quiet "git@github.com:Demired/Demired.github.io.git" master:gh-pages
-           
+      run:  cd /home/runner/work/Demired.github.io/Demired.github.io/public&&git init&&git config user.name "zhangyuan"&&git config user.email "zhangyuan@newyou.ltd"&&git add .&&git commit -m "Update docs"&&git push --force --quiet "git@github.com:Demired/Demired.github.io.git" master:gh-pages
       
 
     
