@@ -36,7 +36,7 @@ jobs:
       
     - name: Deploy
       id: deploy
-      uses: sma11black/hexo-action@v1.0.3
+      uses: Demired/hexo-action@v1.0.4
     
     - name: Commit files
       run: |
