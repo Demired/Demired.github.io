@@ -41,9 +41,9 @@ jobs:
     - name: Commit files
       run: |
         git checkout --orphan temporary
+        rm -rf .gitignore
         git add public
         git commit -m 'new branch'
-        git reset .
         ls
         
         
