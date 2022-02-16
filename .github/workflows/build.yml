@@ -22,8 +22,9 @@ jobs:
     
     - name: Install Dependencies
       run: npm install
+      
+    - name: Show pwd
+      run: pwd
     
-    - name: Npm run build
-      run: npm run build
 
    
