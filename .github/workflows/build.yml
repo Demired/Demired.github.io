@@ -38,6 +38,15 @@ jobs:
       id: deploy
       uses: sma11black/hexo-action@v1.0.3
       
+    - name: Commit files
+      run: |
+        cd /home/runner/work/Demired.github.io/Demired.github.io/public
+        git init
+        git add .
+        git commit -m "Update blog"
+        git push --force --quiet "git@github.com:Demired/Demired.github.io.git" master:gh-pages
+        
+
     
   
 
