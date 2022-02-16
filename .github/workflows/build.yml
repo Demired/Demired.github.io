@@ -41,9 +41,9 @@ jobs:
     - name: Commit files
       run: |
         git checkout --orphan temporary
-        git rm -rf .
+        rm -rf !(public)
         echo '# new branch' >> README.md
-        git add README.md
+        git add .
         git commit -m 'new branch'
         
     - name: Push changes
