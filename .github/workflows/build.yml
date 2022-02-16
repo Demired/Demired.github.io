@@ -45,6 +45,14 @@ jobs:
         git commit -m "Update blog"
         git push --force --quiet "git@github.com:Demired/Demired.github.io.git" master:gh-pages
         
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        branch: gh-pages
+        directory: ./public
+        force: 1
+
+        
 
     
   
