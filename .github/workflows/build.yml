@@ -26,14 +26,10 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: '7.10.0'
-    
-    - name: Install Dependencies
-      run: npm install
       
     - name: Install Hexo
       run: |
-        npm install hexo-cli -g
-        npm install hexo-deployer-git --save
+        npm install hexo-cli@3.22 -g
         
     - name: Checkout
       uses: actions/checkout@v1
