@@ -42,9 +42,6 @@ jobs:
       run: |
         git checkout --orphan temporary
         git rm --cached -r *
-        git rm --cached .travis.yml
-        git rm --cached .npmignore
-        git rm --cached .gitignore
         git add public
         git commit -m 'new branch'
         
