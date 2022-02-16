@@ -43,11 +43,6 @@ jobs:
         git checkout --orphan temporary
         git reset
         git add public -f
-        sudo w
-        chmod --help
-        sudo chmod –R 777 public
-        ls -la
-        git mv ./public . -f
         git commit -m 'new branch'
         
     - name: Push changes
