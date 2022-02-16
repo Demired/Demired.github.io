@@ -24,7 +24,8 @@ jobs:
       run: npm install
       
     - name: Show pwd
-      run: pwd
+      run: ls
+           ls public
     
 
    
