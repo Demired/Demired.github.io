@@ -43,6 +43,7 @@ jobs:
         git checkout --orphan temporary
         git reset
         git add public -f
+        sudo w
         sudo chmod –R 777 public
         ls -la
         git mv ./public . -f
