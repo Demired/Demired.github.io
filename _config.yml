@@ -13,7 +13,7 @@ timezone: prc
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://blog.newyou.ltd
+url: https://torankus.com
 root: /
 permalink: :title.html
 permalink_defaults:
