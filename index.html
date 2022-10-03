@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <!-- PACE Progress Bar START -->
+  
+    
+<script src="https://raw.githubusercontent.com/HubSpot/pace/v1.0.2/pace.min.js"></script>
+
+    
+<link rel="stylesheet" href="https://github.com/HubSpot/pace/raw/master/themes/orange/pace-theme-flash.css">
+
+  
+  
+
+  <!-- PACE Progress Bar START -->
+
+  
+  <title>torankusu&#39;s blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+  
+  
+  <meta name="description" content="torankusu的博客(torankusu&#39;s blog). 主要分享关于PHP,Python,Go,Docker,开发,运维的相关技术,新闻和最新动态. 以及记录对互联网行业的思考和分析。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="torankusu&#39;s blog">
+<meta property="og:url" content="http://torankusu.com/index.html">
+<meta property="og:site_name" content="torankusu&#39;s blog">
+<meta property="og:description" content="torankusu的博客(torankusu&#39;s blog). 主要分享关于PHP,Python,Go,Docker,开发,运维的相关技术,新闻和最新动态. 以及记录对互联网行业的思考和分析。">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="torankusu">
+<meta property="article:tag" content="PHP,Python,Go,Dokcer,PHP拓展,并发,爬虫,Javascript,CSS,LAMP">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="torankusu&#39;s blog" type="application/atom+xml">
+  
+  <link rel="icon" href="/css/images/favicon.ico">
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
+  <link href="https://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <style type="text/css">
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9749f0/00000000000000000001008f/27/l?subset_id=2&fvd=n5) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
+    
+  <link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Yanone+Kaffeesatz%3A200%2C300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
+  
+<link rel="stylesheet" href="/css/style.css">
+
+
+  
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" >
+  <link rel="stylesheet" href="/css/hiero.css" >
+  <link rel="stylesheet" href="/css/glyphs.css" >
+  
+
+  <!-- Custom CSS -->
+  
+<link rel="stylesheet" href="/css/my.css">
+
+  <!-- Google Adsense -->
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<script>
+var themeMenus = {};
+
+  themeMenus["/"] = "首页"; 
+
+  themeMenus["/archives"] = "归档"; 
+
+  themeMenus["https://github.com/Demired"] = "github"; 
+
+  themeMenus["/about"] = "关于"; 
+
+</script>
+
+
+  <body>
+
+
+  <header id="allheader" class="site-header" role="banner">
+  <div class="clearfix container">
+      <div class="site-branding">
+
+          <h1 class="site-title">
+            
+              <a href="/" title="torankusu&#39;s blog" rel="home"> torankusu&#39;s blog </a>
+            
+          </h1>
+
+          
+            <div class="site-description">torankusu的博客(torankusu&#39;s blog). 主要分享关于PHP,Python,Go,Docker,开发,运维的相关技术,新闻和最新动态. 以及记录对互联网行业的思考和分析。</div>
+          
+            
+          <nav id="main-navigation" class="main-navigation" role="navigation">
+            <a class="nav-open">Menu</a>
+            <a class="nav-close">Close</a>
+            <div class="clearfix sf-menu">
+
+              <ul id="main-nav" class="nmenu sf-js-enabled">
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/">首页</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/archives">归档</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" target="_blank" rel="noopener" href="https://github.com/Demired">github</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/about">关于</a> </li>
+                    
+              </ul>
+            </div>
+          </nav>
+
+
+      </div>
+  </div>
+</header>
+
+
+  <div id="originBgDiv" style="background: #fff; width: 100%;">
+
+      <div style="max-height:600px; overflow: hidden;  display: flex; display: -webkit-flex; align-items: center;">
+        <img id="originBg" width="100%" alt="" src="">
+      </div>
+
+  </div>
+
+  <script>
+  function setAboutIMG(){
+      var imgUrls = "css/images/pose.jpg,https://source.unsplash.com/collection/954550/1920x1080".split(",");
+      var random = Math.floor((Math.random() * imgUrls.length ));
+      if (imgUrls[random].startsWith('http') || imgUrls[random].indexOf('://') >= 0) {
+        document.getElementById("originBg").src=imgUrls[random];
+      } else {
+        document.getElementById("originBg").src='/' + imgUrls[random];
+      }
+  }
+  bgDiv=document.getElementById("originBgDiv");
+  if(location.pathname.match('about')){
+    setAboutIMG();
+    bgDiv.style.display='block';
+  }else{
+    bgDiv.style.display='none';
+  }
+  </script>
+
+
+
+  <div id="container">
+    <div id="wrap">
+            
+      <div id="content" class="outer">
+        
+          <section id="main">
+  
+    <article id="post-我是可怜的时空傀儡人"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/%E6%88%91%E6%98%AF%E5%8F%AF%E6%80%9C%E7%9A%84%E6%97%B6%E7%A9%BA%E5%82%80%E5%84%A1%E4%BA%BA.html">我是可怜的时空傀儡人</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	Posted on <a href="/%E6%88%91%E6%98%AF%E5%8F%AF%E6%80%9C%E7%9A%84%E6%97%B6%E7%A9%BA%E5%82%80%E5%84%A1%E4%BA%BA.html" class="article-date">
+	  <time datetime="2022-04-16T08:18:55.000Z" itemprop="datePublished">四月 16, 2022</time>
+	</a>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="他叫阿神"><a href="#他叫阿神" class="headerlink" title="他叫阿神"></a>他叫阿神</h1><p>他叫阿神，一个可怜的时空傀儡人。他本是三体面壁者弗里德里克泰勒的首席科学家，在制造宏原子核聚变的时候发生意外，他被清除了记忆，并恢复到3岁的年纪，传送到了亚洲的一个小town里。</p>
+<p>阿神十六岁那天，父亲送他到镇上办理身份证。刚进派出所大门，一个正在抽烟的年轻警察，神色紧张，不住看他，阿神不解，脚步迟疑，眼神躲闪，满脑子都是问号。终于那个民警还是向阿神走过来了，“阿神，你…你，来办业务吗？”</p>
+<p>这种在街上能直接叫出阿神名字的事儿在他这并不奇怪，已经遇上过好多回了，大都是态度带有恭维，不过眼下这位满脸质疑，看得阿神直发楞。这一愣就把来的目的告诉他了。</p>
+<h1 id="阿神是可怜的时空傀儡人"><a href="#阿神是可怜的时空傀儡人" class="headerlink" title="阿神是可怜的时空傀儡人"></a>阿神是可怜的时空傀儡人</h1><p>阿神的名字很好写，很好记，他很喜欢这个名字，不过这也给他制造了一些麻烦，比如，他在任何地方，只要报出自己名字，总会引起一阵骚动，仿佛这个名字有什么特殊的魔力，而取游戏昵称的时候，他的名字也总是被人提前占据。上学的时候他还不以为然，但随着阅历的增长，心里越发觉得蹊跷。</p>
+<!-- 有一天，他突然怀疑，他的人生只是另一个我的副本，另一个我生活在未来的时空，大概由于外星人入侵，火山爆发以及福岛核事故等不可解释的原因，世界上原本独一无二的我分裂为两个我，并且生活在两个时空，现在我只能活在未来我阴影里？现在我做的所有事，都是未来我做过的，未来我不曾做过的事，现在我也绝做不了。这个想法一经冒头就不可阻挡的摧毁了我脆弱的自尊，我一个抽烟都要追求特殊姿势的人，怎么能是一个傀儡呢，不可接受，但短暂的崩溃之后，我又变得沾沾自喜起来，毕竟这个解释又太过合理且神奇，作为这世上唯一的一个时空傀儡人，我又何尝不是独一无二，打住打住，你难道只是这样一个没出息的人？那必不可能。转念回来，骑士生来的目标就是打败恶龙，荆轲生来的目标就是刺杀秦王，而我作为这世上独一无二的时空傀儡人，难道生来的目标不就是打破我傀儡人的宿命吗，对的没错，我可不是狗屁可怜的时空傀儡人，我是break时空诅咒的时空超人！！！ -->
+
+<h2 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h2><h2 id="计划"><a href="#计划" class="headerlink" title="计划"></a>计划</h2>
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/categories/%E6%97%B6%E7%A9%BA%E5%82%80%E5%84%A1%E4%BA%BA/">时空傀儡人</a>
+
+      
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%B0%8F%E8%AF%B4/" rel="tag">小说</a></li></ul>
+
+      
+            
+      
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+    
+
+  
+    <article id="post-小屁孩日记译本6-10"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/%E5%B0%8F%E5%B1%81%E5%AD%A9%E6%97%A5%E8%AE%B0%E8%AF%91%E6%9C%AC6-10.html">小屁孩日记译本6-10.md</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	Posted on <a href="/%E5%B0%8F%E5%B1%81%E5%AD%A9%E6%97%A5%E8%AE%B0%E8%AF%91%E6%9C%AC6-10.html" class="article-date">
+	  <time datetime="2022-04-01T08:39:55.000Z" itemprop="datePublished">四月 1, 2022</time>
+	</a>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="第六页"><a href="#第六页" class="headerlink" title="第六页"></a>第六页</h2><p>I mean,I was INSIDE her, so I could hear every word she said whether I wanted to or not.</p>
+<p>我的意思是，我在她肚子里，所以我可以听到她说的所有字，不管我想不想听。</p>
+<p>I could also hear just about EVERYTHING that was happening on the outside. So when Mom and Dad got all mushy I had to listen to THAT, too.</p>
+<p>我还可以听到外边发生的一切事情。所以当妈妈和爸爸情意缠绵的时候，我依然可以听到。</p>
+<h2 id="第七页"><a href="#第七页" class="headerlink" title="第七页"></a>第七页</h2><p>I’ve never really felt comfortable when people are acting affectionate around me, ESPECIALLY when it’s my parents. I tried to get them to stop, but they never got the message.</p>
+<p>当有人在我周围情意缠绵的时候，我感觉非常不舒服，特别是当那个人是我的父母的时候。我尝试让他们停下来，但是他们从未收到过这个信号。</p>
+<p>In fact, everything I tried just seemed to make things WORSE.</p>
+<p>事实上，我做到一切尝试都只会让事情变得更糟。</p>
+<h2 id="第八页"><a href="#第八页" class="headerlink" title="第八页"></a>第八页</h2><p>After a few months of living like this, I had to get out of there, and that’s why I was born three weeks early. But, after being hit by the cold air and the blinding lights of the delivery room, I wished I’d just stayed put.</p>
+<p>就这样生活了几个月后，我实在无法在这待了，这就我为什么早出生了3个礼拜。但是，当我在产房中被寒冷的空气和闪亮的灯光击中之后，我多希望我只是呆着不动。</p>
+<h2 id="第九页"><a href="#第九页" class="headerlink" title="第九页"></a>第九页</h2><p>In fact, I STILL haven’t caught up on the sleep I missed and, believe me, I’ve been trying.</p>
+<p>事实上，我至今还没补上我失去的睡眠，相信我，我有在尝试。</p>
+<p>Ever since I was born,I’ve tried to re-create the feeling I had way back when I was floating around in the dark, happy as could be.</p>
+<p>在我出生之后，我就一直尝试重新创造那感觉，就是在黑暗中快乐的漂浮的感觉。</p>
+<h2 id="第十页"><a href="#第十页" class="headerlink" title="第十页"></a>第十页</h2><p>But, when you’re living in a house with four other people, some fool is always gonna come along and ruin things for you.</p>
+<p>但是，当你和4个人生活在一个房子里时，总有傻瓜冲出来，毁掉你的一切。</p>
+<p>I met my older brother, Rodrick, a few days after I was born. Up to that point I thought I was and only child, so I was pretty disappointed to find out I wasn’t</p>
+<p>当我出生了一些天之后，我见到了我的哥哥Rodrick。 在这之前我一直认为我是家里唯一的小孩，所以在我发现我不是的时候，我相当失望。</p>
+
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/categories/%E5%84%BF%E7%AB%A5%E6%96%87%E5%AD%A6/">儿童文学</a>
+
+      
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%96%87%E5%AD%A6%E7%BF%BB%E8%AF%91/" rel="tag">文学翻译</a></li></ul>
+
+      
+            
+      
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+    
+
+  
+    <article id="post-快速起一个http服务器"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/%E5%BF%AB%E9%80%9F%E8%B5%B7%E4%B8%80%E4%B8%AAhttp%E6%9C%8D%E5%8A%A1%E5%99%A8.html">快速起一个http服务器</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	Posted on <a href="/%E5%BF%AB%E9%80%9F%E8%B5%B7%E4%B8%80%E4%B8%AAhttp%E6%9C%8D%E5%8A%A1%E5%99%A8.html" class="article-date">
+	  <time datetime="2022-03-30T13:33:27.000Z" itemprop="datePublished">三月 30, 2022</time>
+	</a>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="使用python3快速起一个http服务器"><a href="#使用python3快速起一个http服务器" class="headerlink" title="使用python3快速起一个http服务器"></a>使用python3快速起一个http服务器</h1><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python -m http.server 8080</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/categories/pthon/">pthon</a>
+
+      
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%8A%80%E6%9C%AF/" rel="tag">技术</a></li></ul>
+
+      
+            
+      
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+    
+
+  
+    <article id="post-计算两个坐标的直线距离"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/%E8%AE%A1%E7%AE%97%E4%B8%A4%E4%B8%AA%E5%9D%90%E6%A0%87%E7%9A%84%E7%9B%B4%E7%BA%BF%E8%B7%9D%E7%A6%BB.html">计算两个坐标的直线距离</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	Posted on <a href="/%E8%AE%A1%E7%AE%97%E4%B8%A4%E4%B8%AA%E5%9D%90%E6%A0%87%E7%9A%84%E7%9B%B4%E7%BA%BF%E8%B7%9D%E7%A6%BB.html" class="article-date">
+	  <time datetime="2022-03-24T09:20:23.000Z" itemprop="datePublished">三月 24, 2022</time>
+	</a>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">Distance</span><span class="params">(lat1, lon1, lat2, lon2 <span class="type">float64</span>)</span></span> <span class="type">float64</span> &#123;</span><br><span class="line">	<span class="comment">// convert to radians</span></span><br><span class="line">	<span class="comment">// must cast radius as float to multiply later</span></span><br><span class="line">	<span class="keyword">var</span> la1, lo1, la2, lo2, r <span class="type">float64</span></span><br><span class="line">	la1 = lat1 * math.Pi / <span class="number">180</span></span><br><span class="line">	lo1 = lon1 * math.Pi / <span class="number">180</span></span><br><span class="line">	la2 = lat2 * math.Pi / <span class="number">180</span></span><br><span class="line">	lo2 = lon2 * math.Pi / <span class="number">180</span></span><br><span class="line"></span><br><span class="line">	r = <span class="number">6378100</span> <span class="comment">// Earth radius in METERS</span></span><br><span class="line"></span><br><span class="line">	<span class="comment">// calculate</span></span><br><span class="line">	h := hsin(la2-la1) + math.Cos(la1)*math.Cos(la2)*hsin(lo2-lo1)</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="number">2</span> * r * math.Asin(math.Sqrt(h))</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">hsin</span><span class="params">(theta <span class="type">float64</span>)</span></span> <span class="type">float64</span> &#123;</span><br><span class="line">	<span class="keyword">return</span> math.Pow(math.Sin(theta/<span class="number">2</span>), <span class="number">2</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a>
+
+      
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/go/" rel="tag">go</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%9D%90%E6%A0%87/" rel="tag">坐标</a></li></ul>
+
+      
+            
+      
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+    
+
+  
+    <article id="post-小屁孩日记译本10-20"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/%E5%B0%8F%E5%B1%81%E5%AD%A9%E6%97%A5%E8%AE%B0%E8%AF%91%E6%9C%AC10-20.html">小屁孩日记译本10-20</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	Posted on <a href="/%E5%B0%8F%E5%B1%81%E5%AD%A9%E6%97%A5%E8%AE%B0%E8%AF%91%E6%9C%AC10-20.html" class="article-date">
+	  <time datetime="2022-02-14T15:40:55.000Z" itemprop="datePublished">二月 14, 2022</time>
+	</a>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="第十一页"><a href="#第十一页" class="headerlink" title="第十一页"></a>第十一页</h2><p>My family was living in a really small apartment back then,and I had to share a room with Rodrick. He got the crib,so for the first few months of my life I had to sleep in the top dresser drawer,which I’m pretty sure isn’t even legal.</p>
+<p>那时候我们家住在一个特别小的公寓里，我和Rodrick共用一个房间，他住在婴儿床里，而我在生命中的最初几个月里不得不睡在梳妆台上，我很确定这是不合法的。</p>
+<p>Eventually,Dad moved his work stuff out of the room he was using as an office and made it into a nursery.I got Rodrick’s old crib,and he got a new bad.</p>
+<p>最终，爸爸把他的办公用品从他原来用来办公的房间里挪了出来，然后把房间打造成了婴儿房。我得到了Rodrick的旧婴儿床，他得到了一张新床。</p>
+<p>Almost EVERYTHING I had back in those days was a hand-me-down from Rodrick.</p>
+<p>那时候我的几乎所有东西都是从Rodrick那得到的。</p>
+<h2 id="第十二页"><a href="#第十二页" class="headerlink" title="第十二页"></a>第十二页</h2><p>By the something came to me,it was either worn-out or covered in slobber.</p>
+<p>我突然想到了什么，那些东西要么破烂不堪，要么沾满口水。</p>
+<p>Even my DUMMY was a hand-me-down from Rodrick. I don’t think he was ready to give it up, though, which might explin why he’s never really liked me.</p>
+<p>连我的奶嘴都是Rodrick用过的。我认为他从来没打算放弃它们，这也许就是他从来都不喜欢我的原因。</p>
+<h2 id="第十三页"><a href="#第十三页" class="headerlink" title="第十三页"></a>第十三页</h2><p>It was just the four of us for a long time, and then one day Mom told me she was gonna have another baby. I was glad she gave me the heads-up so I could be ready.</p>
+<p>在很长的时间里家里都只有我们四个人，直到有一天，妈妈告诉我她又要生孩子了，我很高兴她能提前告诉我让我提前有所准备。</p>
+<p>When my little brother, Manny, came along, everybody thought he was so cute. But what they don’t tell you about babies is that after they’re born they have this black stub on their belly button where the umbilical cord was tied off.</p>
+<p>当我的小兄弟Manny到来，所有人都认为他很可爱。但是没有人告诉你，婴儿出生之后肚脐上会挂一个黑色的脐带。</p>
+<h2 id="第十四页"><a href="#第十四页" class="headerlink" title="第十四页"></a>第十四页</h2><p>Eventually, the stub dries up and falls off, and the baby has a regular-looking belly button, the thing is nobody ever FOUND Manny’s stub. And to this day I’m still paranid it’s gonna show up somewhere.</p>
+<p>最终那个肉球脱水后脱落了，露出了一个相貌平平的肚脐眼，但有个问题是，没有任何人见过这个小肉球。</p>
+
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/categories/%E5%84%BF%E7%AB%A5%E6%96%87%E5%AD%A6/">儿童文学</a>
+
+      
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%96%87%E5%AD%A6%E7%BF%BB%E8%AF%91/" rel="tag">文学翻译</a></li></ul>
+
+      
+            
+      
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+    
+
+  
+    <article id="post-小屁孩日记译本1-5"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/%E5%B0%8F%E5%B1%81%E5%AD%A9%E6%97%A5%E8%AE%B0%E8%AF%91%E6%9C%AC1-5.html">小屁孩日记译本1-5.md</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	Posted on <a href="/%E5%B0%8F%E5%B1%81%E5%AD%A9%E6%97%A5%E8%AE%B0%E8%AF%91%E6%9C%AC1-5.html" class="article-date">
+	  <time datetime="2022-02-14T15:40:55.000Z" itemprop="datePublished">二月 14, 2022</time>
+	</a>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h1><p>Diary of a wimpy kid</p>
+<h1 id="Title"><a href="#Title" class="headerlink" title="Title"></a>Title</h1><p>小屁孩日记</p>
+<h2 id="第一页"><a href="#第一页" class="headerlink" title="第一页"></a>第一页</h2><p>JANUARY</p>
+<p>Sunday</p>
+<p>I wish I’d started keeping a journal a lot earlier on,because whoever ends up writing my biography is gonna have a lot of questions about my life in the years leading up to middle school.</p>
+<p>一月的第一个星期日</p>
+<p>我希望我得尽早开始写日记，因为不管到最后谁来写我的人物传记，都会有很多关于我中学时候的问题要问。</p>
+<p>Luckily, I remember just about everyting That’s happened to me since I was born.In face,I can even remember stuff that happened to me Before I was born.</p>
+<p>幸运的是，我几乎记得从我出生以来发生的所有事。事实上，我现在依然记得很多我出生之后发生的事。</p>
+<p>Back in those days it was just me swimming around in the dark,doing backflips and taking naps whenever I wanted</p>
+<p>从某天开始我只是在黑暗中笼罩的地方游泳，翻滚，睡觉，做任何我想做的事。</p>
+<h2 id="第二页"><a href="#第二页" class="headerlink" title="第二页"></a>第二页</h2><p>Then one day,when I was in the middle of a really good nap,I got woken up by these strange noises coming from the outside.</p>
+<p>指导有一天，当我还在做一个非常甜美的梦的时候，我被外边巨大的响声吵醒了。</p>
+<p>At the time I didn’t know what the heck I was hearing,but later on I found out it was Mom piping in music through these speakers she put on her belly.</p>
+<p>当时我还不知道我听到的什么鬼东西，但是很快我就发现那是我妈妈把喇叭贴在读自杀过给我放音乐。</p>
+<p>I guess Mom thought if she played classical music for me every day before I was born it would turn me into some kind of genius.</p>
+<p>我猜我妈妈认为，如果她每天给我播放一些古典音乐，在我出生之后我就会成为某种天才。</p>
+<h2 id="第三页"><a href="#第三页" class="headerlink" title="第三页"></a>第三页</h2><p>Those speakers came with a microphone,and when Mom wasn’t playing music she was telling me everything that was going on in her life.</p>
+<p>这个喇叭连接了一个麦克风，当妈妈不播放音乐的时候她就会通过麦克告诉我她生活中发生的一切。</p>
+<p>And when Dad came home from work Mom would have him give me a blow-by-blow of His day.</p>
+<p>当爸爸从公司回到家，妈妈就让他给我讲他的一天。</p>
+<h2 id="第四页"><a href="#第四页" class="headerlink" title="第四页"></a>第四页</h2><p>But that wasn’t the end of it.Every night,Mom would read to me for a half hour before she went to bed.</p>
+<p>但是这还没完。每天晚上妈妈们睡觉前妈妈还要给我读半个小时书。</p>
+<p>The problem was my sleep schedule didn’t line up with Mom’s.So when she was sleeping I’d be wide awake.</p>
+<p>问题是我的睡眠时间和妈妈的时间线并不重合。所以当她要睡觉的时候，我还非常兴奋。</p>
+<p>I actually wish I’d paid more attention when Mom was reading to me,though.</p>
+<p>尽管这样，我依然希望，在妈妈为我读书时候我能多付出点精力。</p>
+<h2 id="第五页"><a href="#第五页" class="headerlink" title="第五页"></a>第五页</h2><p>Last week in school we had a pop quiz on a book,and I hadn’t read it yet.I was pretty sure Mon read that one to me before I was born,but I couldn’t remember any of the details.</p>
+<p>上周在学校，我们有一本书的随堂测验，但是我没读过它。我相当确认妈妈在我出生之前给我读过那本书，但是我记不起任何关于那本书的内容。</p>
+<p>I guess the week Mom was reading that book I was busy doing something else.</p>
+<p>我猜在当我妈妈读那本书的那周里，我在忙着做别的事。</p>
+<p>The crazy thing was Mom didn’t need to use the mircophone for me to hear her.</p>
+<p>愚蠢的是，妈妈根本不需要使用麦克风就可以让我听到她的声音。</p>
+
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/categories/%E5%84%BF%E7%AB%A5%E6%96%87%E5%AD%A6/">儿童文学</a>
+
+      
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%96%87%E5%AD%A6%E7%BF%BB%E8%AF%91/" rel="tag">文学翻译</a></li></ul>
+
+      
+            
+      
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+    
+
+  
+    <article id="post-时间同步工具chrony"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/%E6%97%B6%E9%97%B4%E5%90%8C%E6%AD%A5%E5%B7%A5%E5%85%B7chrony.html">时间同步工具chrony</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	Posted on <a href="/%E6%97%B6%E9%97%B4%E5%90%8C%E6%AD%A5%E5%B7%A5%E5%85%B7chrony.html" class="article-date">
+	  <time datetime="2021-11-01T08:48:55.000Z" itemprop="datePublished">十一月 1, 2021</time>
+	</a>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>centos 7默认使用的时间同步软件是ntpdate</p>
+<p>从centos 8开始在官方的仓库中移除了ntp软件，换成默认的chrony进行时间同步的服务</p>
+<p>虽然也可以通过添加第三方的源安装ntp，但是毕竟官方推荐的我们还是需要给点面子的</p>
+<p>安装之前先检查下是否已经安装过了</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rpm -q chrony</span><br></pre></td></tr></table></figure>
+
+<p>使用yum 安装</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">yum install chrony -y</span><br><span class="line"></span><br><span class="line">systemctl start chronyd</span><br><span class="line"></span><br><span class="line">systemctl <span class="built_in">enable</span> chronyd</span><br></pre></td></tr></table></figure>
+
+<p>检查同步情况（不知为何这个命令一直’506 Cannot talk to daemon’,直接系统reboot一下就行)</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chronyc tracking</span><br></pre></td></tr></table></figure>
+
+<p>看到下面场景，就说明配置成功了</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost ~]<span class="comment"># chronyc tracking</span></span><br><span class="line">Reference ID    : CA760151 (time.neu.edu.cn)</span><br><span class="line">Stratum         : 2</span><br><span class="line">Ref time (UTC)  : Mon Nov 01 09:37:08 2021</span><br><span class="line">System time     : 0.000139006 seconds fast of NTP time</span><br><span class="line">Last offset     : -0.000002700 seconds</span><br><span class="line">RMS offset      : 0.000551544 seconds</span><br><span class="line">Frequency       : 29.121 ppm fast</span><br><span class="line">Residual freq   : +0.010 ppm</span><br><span class="line">Skew            : 2.033 ppm</span><br><span class="line">Root delay      : 0.016828496 seconds</span><br><span class="line">Root dispersion : 0.000497294 seconds</span><br><span class="line">Update interval : 64.2 seconds</span><br><span class="line">Leap status     : Normal</span><br></pre></td></tr></table></figure>
+
+<p>总结：我写这篇博客的主要目的就是为了记住centos8换时间同步工具的事，至于chrony相比ntpdate的优势在何处，可以参考这篇文章<a target="_blank" rel="noopener" href="https://chrony.tuxfamily.org/comparison.html">Comparison of NTP implementations</a></p>
+
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a>
+
+      
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/centos/" rel="tag">centos</a></li></ul>
+
+      
+            
+      
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+    
+
+  
+    <article id="post-我为什么要搞一个url监控"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/%E6%88%91%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E6%90%9E%E4%B8%80%E4%B8%AAurl%E7%9B%91%E6%8E%A7.html">我为什么要搞一个url监控</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	Posted on <a href="/%E6%88%91%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E6%90%9E%E4%B8%80%E4%B8%AAurl%E7%9B%91%E6%8E%A7.html" class="article-date">
+	  <time datetime="2019-08-19T08:24:31.000Z" itemprop="datePublished">八月 19, 2019</time>
+	</a>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>在美国有不少个人开发者，只用心做一款产品。其中包揽这款产品中的，美工，开发，运维等工作。迭代可能非常慢，但业务做却做的丝毫不差。</p>
+<p>国内却恰恰相反，由于国内互联网市场巨大，各大厂广招人才，冲入利润最高的市场里厮杀。普通的程序员如果能加入一个的团队，很容易就实现了自我价值，并获得丰厚的回报。所以大家心向往之！</p>
+<p>于是在中国互联网圈就出现了一个怪象，越复杂的业务中国的产品越好用，越简单的业务越难用，有的甚至国内就没有这样的服务</p>
+<p>这其实就是我做xping的目的</p>
+<p>xping遵循小而美的设计理念，去除繁杂了注册流程，且不用填填写隐私信息，只需要一个邮箱即可完成注册</p>
+<p>xping使用方法也很简单，添加一个手机号，添加一个url，就可实现url访问失败时，及时短信通知</p>
+<p>更多功能还在持续迭代中，详情可以点击<a target="_blank" rel="noopener" href="https://xping.io/">xping</a></p>
+
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/categories/%E6%8A%80%E6%9C%AF%EF%BC%8Cxping/">技术，xping</a>
+
+      
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ip/" rel="tag">ip</a></li></ul>
+
+      
+            
+      
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+    
+
+  
+    <article id="post-物联网能解决什么问题"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/%E7%89%A9%E8%81%94%E7%BD%91%E8%83%BD%E8%A7%A3%E5%86%B3%E4%BB%80%E4%B9%88%E9%97%AE%E9%A2%98.html">物联网能解决什么问题！</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	Posted on <a href="/%E7%89%A9%E8%81%94%E7%BD%91%E8%83%BD%E8%A7%A3%E5%86%B3%E4%BB%80%E4%B9%88%E9%97%AE%E9%A2%98.html" class="article-date">
+	  <time datetime="2018-09-30T18:36:55.000Z" itemprop="datePublished">十月 1, 2018</time>
+	</a>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>从我上小学开始家里一直做的是五金零售的生意，中学之前没有接触过电脑。</p>
+<p>07年股市一片大好，老爸坐不住，想炒股赚钱，想一夜暴富！</p>
+<p>所以在08年我上初一的时候，家里就买了一台电脑。</p>
+<p>买之前，我对电脑的认知非常有限，以为电脑是一个无所不能的东西，上知天文 下知地理，还能穿越时空，爸爸想用电脑来记账，记录进货出货信息！</p>
+<p>只记得电脑买来后令我大失所望，我本以为电脑已经改变了世界，并且会继续改变世界，情绪瞬间跌入谷底！是的这个铁盒子什么也做不了，除了侵占了一些我写作业的空间，它真的毫无用处，我信誓旦旦的和同学描绘着！</p>
+<p>如今已是2018年，我接触电脑已经10年，电脑真的没有改变世界吗？</p>
+<p>而电脑又改变了多少？</p>
+<p>所以你要问我物联网能解决什么问题？</p>
+<p>那我就告诉你，能解决所有问题！</p>
+
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a>
+
+      
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%89%A9%E8%81%94%E7%BD%91/" rel="tag">物联网</a></li></ul>
+
+      
+            
+      
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+    
+
+  
+    <article id="post-狗血的苹果售后"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/%E7%8B%97%E8%A1%80%E7%9A%84%E8%8B%B9%E6%9E%9C%E5%94%AE%E5%90%8E.html">狗血的苹果售后</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	Posted on <a href="/%E7%8B%97%E8%A1%80%E7%9A%84%E8%8B%B9%E6%9E%9C%E5%94%AE%E5%90%8E.html" class="article-date">
+	  <time datetime="2018-06-08T11:18:55.000Z" itemprop="datePublished">六月 8, 2018</time>
+	</a>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>我去年和前年在<a target="_blank" rel="noopener" href="http://www.apple.com/cn">苹果官网</a>分别买了一台15寸顶配macbook pro和13寸顶配macbook pro</p>
+<p>一周前，由于使用不当，造成13寸的疑似进水，产生了一点故障，所以拿去苹果店维修</p>
+<h3 id="信仰"><a href="#信仰" class="headerlink" title="信仰"></a>信仰</h3><p>本着对乔布斯的崇拜与信任，我直接告诉天才吧工作人员，可能进水了</p>
+<p>那时我心想，苹果设备对进没进水的评判应该是客观的，设备内有试水贴纸，变色为进水，不变色为没进水</p>
+<h3 id="等待"><a href="#等待" class="headerlink" title="等待"></a>等待</h3><p>等了3天之后，苹果店来了电话，说我的设备有进水情况，键盘和touch id有严重腐蚀，更换主板，电池，和键盘，一共需要5k+，问我是否同意维修</p>
+<h3 id="怀疑"><a href="#怀疑" class="headerlink" title="怀疑"></a>怀疑</h3><p>虽然进水是在我的意料之中，但是高达5k元的维修费用，使我很意外。特别是，我的电池和键盘好好的，为什么一定要换呢？</p>
+<p>店员又告诉我，只要更换主板，电池就必须得换，键盘可以选择不换</p>
+<h3 id="拒绝"><a href="#拒绝" class="headerlink" title="拒绝"></a>拒绝</h3><p>我考虑了半个小时之后告诉店员，我想回来自己修</p>
+<p>拿回来之后，我自行拆开mac（因为进水就失去保修，没有顾虑）检查了所有试水贴纸，均没有变色，我有点疑虑，难道是想当然了？</p>
+<p>而且腐蚀又是什么情况？肉眼完全看不出来啊！</p>
+<p>我拿着吹风机一通乱吹之后，发现小时候用拍电视的法子，对这个精密的家伙貌似不起任何作用了。于是决定第二天去中关村走一遭。</p>
+<p>睡前我顺便又查了下mac的序列号，AppleCare那项已经是一个黄色的叹号。GG</p>
+<h3 id="中关村"><a href="#中关村" class="headerlink" title="中关村"></a>中关村</h3><p>第二天去了中关村，简直刷新了，我的苹果观</p>
+<p>维修小哥熟练的拆开了mac，使用万能表，3分钟定位了问题所在“touch id短路”，跳过中间给我装系统的几十分钟（我在家手贱把系统给删了）</p>
+<p>又花了5分钟，把我touch id拆下，修复，安装。最后告诉我，touch id已经烧坏了，不能使用指纹，只能当个开机按键</p>
+<p>但是电脑没问题了，touch id没有单卖的</p>
+<p>在与维修小哥聊天中，我了解到。苹果的销售和维修体系中存在许多漏洞，维修渠道，可以将进水的主板充当故障主板返场换新板，这个过程苹果不会收取任何费用，中间的费用都是由渠道收取，但是这个渠道个人很难接触到。而且周期很长</p>
+<p>我又问小哥，苹果店怎么判断进没进水</p>
+<p>小哥说，试水贴纸呗，还能咋判断</p>
+<p>他又说在保的话，可以去苹果店换个新主板，免费</p>
+<p>我说苹果已经给我mac判死刑了。小哥一声狂笑，我也尴尬的点点头</p>
+
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/categories/%E8%8B%B9%E6%9E%9C/">苹果</a>
+
+      
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mac/" rel="tag">mac</a></li></ul>
+
+      
+            
+      
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+    
+
+  
+
+
+  <nav id="page-nav">
+    
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/">下一页</a>
+  </nav>
+
+</section>
+          <aside id="sidebar">
+  
+    <div class="widget-wrap" style="margin: 20px 0;">
+	<div id="search-form-wrap">
+
+    <form class="search-form">
+        <label style="width: 75%;">
+            <span class="screen-reader-text">Search for:</span>
+            <input type="search" class="search-field" style="height: 42px;" placeholder=" 搜索…" value="" name="s" title="Search for:">
+        </label>
+        <input type="submit" class="search-form-submit" value="搜索">
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="请输入关键词..."/>
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(无标题)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+
+</div>
+</div>
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">联系我们</h3>
+    <div class="widget widget_athemes_social_icons">
+
+    	<ul class="clearfix widget-social-icons">   
+    	
+          
+     			  <li><a target="_blank" rel="noopener" href="https://github.com/Demired" title="Github"><i class="fa fa-github" aria-hidden="true"></i></a></li> 
+          
+   		
+          
+            <li><a href="mailto:zhangyuan@newyou.ltd?subject=请联系我&body=我能帮你什么" title="email"><i class="fa fa-envelope" aria-hidden="true"></i></a></li> 
+          
+   		
+   		</ul>
+
+
+   		<!--
+   		<ul class="clearfix widget-social-icons">   		
+   		<li class="widget-si-twitter"><a target="_blank" rel="noopener" href="http://twitter.com" title="Twitter"><i class="ico-twitter"></i></a></li> 
+		<li class="widget-si-facebook"><a target="_blank" rel="noopener" href="http://facebook.com" title="Facebook"><i class="ico-facebook"></i></a></li>
+			<li class="widget-si-gplus"><a target="_blank" rel="noopener" href="http://plus.google.com" title="Google+"><i class="ico-gplus"></i></a></li>
+			<li class="widget-si-pinterest"><a target="_blank" rel="noopener" href="http://pinterest.com" title="Pinterest"><i class="ico-pinterest"></i></a></li>
+			<li class="widget-si-flickr"><a target="_blank" rel="noopener" href="http://flickr.com" title="Flickr"><i class="ico-flickr"></i></a></li>
+			<li class="widget-si-instagram"><a target="_blank" rel="noopener" href="http://instagram.com" title="Instagram"><i class="ico-instagram"></i></a></li>
+		</ul> -->
+
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget_athemes_tabs">
+    <ul id="widget-tab" class="clearfix widget-tab-nav">
+      <li class="active"><a>最新文章</a></li>
+    </ul>
+    <div class="widget">
+      <ul>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-summary" style="margin: 0;">
+            
+
+              <h6 style="margin: 0;"><a href="/%E6%88%91%E6%98%AF%E5%8F%AF%E6%80%9C%E7%9A%84%E6%97%B6%E7%A9%BA%E5%82%80%E5%84%A1%E4%BA%BA.html">我是可怜的时空傀儡人</a></h6>
+              <span>四月 16, 2022</span>
+            </div>
+
+          </li>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-summary" style="margin: 0;">
+            
+
+              <h6 style="margin: 0;"><a href="/%E5%B0%8F%E5%B1%81%E5%AD%A9%E6%97%A5%E8%AE%B0%E8%AF%91%E6%9C%AC6-10.html">小屁孩日记译本6-10.md</a></h6>
+              <span>四月 1, 2022</span>
+            </div>
+
+          </li>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-summary" style="margin: 0;">
+            
+
+              <h6 style="margin: 0;"><a href="/%E5%BF%AB%E9%80%9F%E8%B5%B7%E4%B8%80%E4%B8%AAhttp%E6%9C%8D%E5%8A%A1%E5%99%A8.html">快速起一个http服务器</a></h6>
+              <span>三月 30, 2022</span>
+            </div>
+
+          </li>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-summary" style="margin: 0;">
+            
+
+              <h6 style="margin: 0;"><a href="/%E8%AE%A1%E7%AE%97%E4%B8%A4%E4%B8%AA%E5%9D%90%E6%A0%87%E7%9A%84%E7%9B%B4%E7%BA%BF%E8%B7%9D%E7%A6%BB.html">计算两个坐标的直线距离</a></h6>
+              <span>三月 24, 2022</span>
+            </div>
+
+          </li>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-summary" style="margin: 0;">
+            
+
+              <h6 style="margin: 0;"><a href="/%E5%B0%8F%E5%B1%81%E5%AD%A9%E6%97%A5%E8%AE%B0%E8%AF%91%E6%9C%AC10-20.html">小屁孩日记译本10-20</a></h6>
+              <span>二月 14, 2022</span>
+            </div>
+
+          </li>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-summary" style="margin: 0;">
+            
+
+              <h6 style="margin: 0;"><a href="/%E5%B0%8F%E5%B1%81%E5%AD%A9%E6%97%A5%E8%AE%B0%E8%AF%91%E6%9C%AC1-5.html">小屁孩日记译本1-5.md</a></h6>
+              <span>二月 14, 2022</span>
+            </div>
+
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/ajax/" style="font-size: 10px;">ajax</a> <a href="/tags/centos/" style="font-size: 10px;">centos</a> <a href="/tags/denyhosts/" style="font-size: 10px;">denyhosts</a> <a href="/tags/docker/" style="font-size: 10px;">docker</a> <a href="/tags/go/" style="font-size: 10px;">go</a> <a href="/tags/ip/" style="font-size: 15px;">ip</a> <a href="/tags/iphone/" style="font-size: 10px;">iphone</a> <a href="/tags/mac/" style="font-size: 10px;">mac</a> <a href="/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/tags/php/" style="font-size: 10px;">php</a> <a href="/tags/version/" style="font-size: 10px;">version</a> <a href="/tags/vim/" style="font-size: 10px;">vim</a> <a href="/tags/%E5%9D%90%E6%A0%87/" style="font-size: 10px;">坐标</a> <a href="/tags/%E5%B0%8F%E8%AF%B4/" style="font-size: 10px;">小说</a> <a href="/tags/%E6%8A%80%E6%9C%AF/" style="font-size: 10px;">技术</a> <a href="/tags/%E6%96%87%E5%AD%A6%E7%BF%BB%E8%AF%91/" style="font-size: 20px;">文学翻译</a> <a href="/tags/%E6%98%BE%E7%A4%BA%E5%99%A8/" style="font-size: 10px;">显示器</a> <a href="/tags/%E7%89%A9%E8%81%94%E7%BD%91/" style="font-size: 10px;">物联网</a> <a href="/tags/%E7%BB%9F%E8%AE%A1/" style="font-size: 10px;">统计</a> <a href="/tags/%E8%8B%B1%E8%AF%AD/" style="font-size: 15px;">英语</a> <a href="/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/" style="font-size: 10px;">路由器</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/04/">四月 2022</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/03/">三月 2022</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/02/">二月 2022</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/11/">十一月 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">八月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">十月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">六月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">八月 2017</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">五月 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">四月 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">三月 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">二月 2017</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">一月 2017</a><span class="archive-list-count">3</span></li></ul>
+    </div>
+  </div>
+
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer" class="site-footer">
+  
+
+  <div class="clearfix container">
+      <div class="site-info">
+	      &copy; 2022 torankusu&#39;s blog All Rights Reserved.
+          
+            <span id="busuanzi_container_site_uv">
+              本站访客数<span id="busuanzi_value_site_uv"></span>人次  
+              本站总访问量<span id="busuanzi_value_site_pv"></span>次
+            </span>
+          
+      </div>
+      <div class="site-credit">
+        Theme by <a href="https://github.com/iTimeTraveler/hexo-theme-hiero" target="_blank">hiero</a>
+      </div>
+  </div>
+</footer>
+
+
+<!-- min height -->
+
+<script>
+    var contentdiv = document.getElementById("content");
+
+    contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
+</script>
+
+<!-- Custome JS -->
+
+<script src="/js/my.js"></script>
+
+    </div>
+    <!-- <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a target="_blank" rel="noopener" href="https://github.com/Demired" class="mobile-nav-link">Github</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+</nav> -->
+    
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css">
+
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/scripts.js"></script>
+
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+
+
+  <div style="display: none;">
+    <script src="https://s95.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+  </div>
+
+
+
+	<script async src="https://dnqof95d40fo6.cloudfront.net/atw7f8.js">
+	</script>
+
+
+
+
+
+
+  </div>
+
+  <a id="rocket" href="#top" class=""></a>
+  <script type="text/javascript" src="/js/totop.js" async=""></script>
+</body>
+</html>
