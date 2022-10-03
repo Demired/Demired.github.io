@@ -706,7 +706,7 @@ var themeMenus = {};
     <div class="article-entry" itemprop="articleBody">
       
         <p>有些业务需要判断请求类型来决定输出模版还是api数据再或者直接ban掉,我这里只能提供一个思路，要想让自己的应用变的强壮，我们还需要更多更严谨的代码</p>
-<h2 id="PHP判断请求类型"><a href="#PHP判断请求类型" class="headerlink" title="PHP判断请求类型:"></a>PHP判断请求类型:</h2><h3 id="ajax"><a href="#ajax" class="headerlink" title="ajax"></a>ajax</h3><p>在发送ajax请求的时候，我们可以通过XMLHttpRequest这个对象，创建自定义的header头信息， 在jquery框架中，对于通过它的 .ajax, .get, or .post方法请求网页内容时，它会向服务器传递一个HTTP_X_REQUESTED_WITH的参数，php中就是在header一层判断是否是ajax请求，对应的根据$_SERVER[‘HTTP_X_REQUESTED_WITH’]判断。</p>
+<h2 id="PHP判断请求类型"><a href="#PHP判断请求类型" class="headerlink" title="PHP判断请求类型:"></a>PHP判断请求类型:</h2><h3 id="ajax"><a href="#ajax" class="headerlink" title="ajax"></a>ajax</h3><p>在发送ajax请求的时候，我们可以通过XMLHttpRequest这个对象，创建自定义的header头信息， 在jquery框架中，对于通过它的 $.ajax, $.get, or $.post方法请求网页内容时，它会向服务器传递一个HTTP_X_REQUESTED_WITH的参数，php中就是在header一层判断是否是ajax请求，对应的根据$_SERVER[‘HTTP_X_REQUESTED_WITH’]判断。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">function isAjax()··</span><br><span class="line"> &#123;</span><br><span class="line">     return isset($_SERVER[&#x27;HTTP_X_REQUESTED_WITH&#x27;]) &amp;&amp; strtolower($_SERVER[&#x27;HTTP_X_REQUESTED_WITH&#x27;]) == &#x27;xmlhttprequest&#x27;;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
 
 <h3 id="system"><a href="#system" class="headerlink" title="system"></a>system</h3><p>在浏览器请求页面时会带上浏览器的HTTP_USER_AGENT，而这个参数通常是固定不变的，在服务器端我们可以通过$_SERVER[‘HTTP_USER_AGENT’]获取这一参数，再通过字符串匹配来确定浏览器类型。</p>
