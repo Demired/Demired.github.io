@@ -17,25 +17,23 @@
   <!-- PACE Progress Bar START -->
 
   
-  <title>你和你一生的故事 | torankusu&#39;s blog</title>
+  <title>how to change centos baseurl from mirror.centos.org to vault.centos.org | torankusu&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="keywords" content="科幻" />
   
   
   
-  
-  <meta name="description" content="你和你一生的故事">
+  <meta name="description" content="Change CentOS baseURL to vault.centos.orgwhyCentOS Linux 8 had reached the End Of Life (EOL) on December 31st, 2021. It means that CentOS 8 will no longer receive development resources from the offici">
 <meta property="og:type" content="article">
-<meta property="og:title" content="你和你一生的故事">
-<meta property="og:url" content="http://torankusu.com/S-Y-L-O.html">
+<meta property="og:title" content="How to change CentOS baseURL from mirror.centos.org to vault.centos.org">
+<meta property="og:url" content="http://torankusu.com/CentOS%208%20yum%20issue.html">
 <meta property="og:site_name" content="torankusu&#39;s blog">
-<meta property="og:description" content="你和你一生的故事">
+<meta property="og:description" content="Change CentOS baseURL to vault.centos.orgwhyCentOS Linux 8 had reached the End Of Life (EOL) on December 31st, 2021. It means that CentOS 8 will no longer receive development resources from the offici">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-10-03T10:56:55.000Z">
-<meta property="article:modified_time" content="2022-10-03T17:44:50.618Z">
+<meta property="article:published_time" content="2022-10-10T08:34:38.882Z">
+<meta property="article:modified_time" content="2022-10-10T08:39:43.084Z">
 <meta property="article:author" content="torankusu">
-<meta property="article:tag" content="科幻">
+<meta property="article:tag" content="PHP,Python,Go,Dokcer,PHP拓展,并发,爬虫,Javascript,CSS,LAMP">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="torankusu&#39;s blog" type="application/atom+xml">
@@ -178,7 +176,7 @@ var themeMenus = {};
             
       <div id="content" class="outer">
         
-          <section id="main" style="float:none;"><article id="post-S-Y-L-O" style="width: 66%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+          <section id="main" style="float:none;"><article id="post-CentOS 8 yum issue" style="width: 66%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
   <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
     
     
@@ -186,7 +184,7 @@ var themeMenus = {};
         
   
     <h1 class="thumb" class="article-title" itemprop="name">
-      你和你一生的故事
+      How to change CentOS baseURL from mirror.centos.org to vault.centos.org
     </h1>
   
 
@@ -194,27 +192,31 @@ var themeMenus = {};
     
     <div class="article-meta">
       
-	Posted on <a href="/S-Y-L-O.html" class="article-date">
-	  <time datetime="2022-10-03T10:56:55.000Z" itemprop="datePublished">十月 3, 2022</time>
+	Posted on <a href="/CentOS%208%20yum%20issue.html" class="article-date">
+	  <time datetime="2022-10-10T08:34:38.882Z" itemprop="datePublished">十月 10, 2022</time>
 	</a>
 
       
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="大纲"><a href="#大纲" class="headerlink" title="大纲"></a>大纲</h1><p>Lunatic和斐济前女友Churchill的奇幻冒险</p>
+        <h1 id="Change-CentOS-baseURL-to-vault-centos-org"><a href="#Change-CentOS-baseURL-to-vault-centos-org" class="headerlink" title="Change CentOS baseURL to vault.centos.org"></a>Change CentOS baseURL to vault.centos.org</h1><h2 id="why"><a href="#why" class="headerlink" title="why"></a>why</h2><p>CentOS Linux 8 had reached the End Of Life (EOL) on December 31st, 2021. It means that CentOS 8 will no longer receive development resources from the official CentOS project. After Dec 31st, 2021, if you need to update your CentOS, you need to change the mirrors to vault.centos.org where they will be archived permanently. Alternatively, you may want to upgrade to CentOS Stream or migrate from CentOS to Rocky Linux.</p>
+<p>Go to the &#x2F;etc&#x2F;yum.repos.d&#x2F; directory.</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@newyou.ltd ~]# cd /etc/yum.repos.d/</span><br></pre></td></tr></table></figure>
+
+<p>Run the below commands</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@newyou.ltd ~]# sed -i &#x27;s/mirrorlist/#mirrorlist/g&#x27; /etc/yum.repos.d/CentOS-*</span><br><span class="line">[root@newyou.ltd ~]# sed -i &#x27;s|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|g&#x27; /etc/yum.repos.d/CentOS-*</span><br></pre></td></tr></table></figure>
+
+<p>Now run  dnf update</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@newyou.ltd ~]# dnf update</span><br></pre></td></tr></table></figure>
+
+<p>That’s it!</p>
 
       
     </div>
     <footer class="entry-meta entry-footer">
       
-	<span class="ico-folder"></span>
-    <a class="article-category-link" href="/categories/%E5%B0%8F%E8%AF%B4/">小说</a>
-
       
-  <span class="ico-tags"></span>
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%A7%91%E5%B9%BB/" rel="tag">科幻</a></li></ul>
-
       
             
       
@@ -248,19 +250,10 @@ var themeMenus = {};
     
 <nav id="article-nav">
   
-    <a href="/%E7%94%B5%E5%8A%A8%E4%B8%89%E5%82%BB%E7%9A%84%E8%AF%95%E9%A9%BE%E4%BD%93%E9%AA%8C.html" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">上一篇</strong>
-      <div class="article-nav-title">
-        
-          电动三傻的试驾体验
-        
-      </div>
-    </a>
   
-  
-    <a href="/%E6%88%91%E6%98%AF%E5%8F%AF%E6%80%9C%E7%9A%84%E6%97%B6%E7%A9%BA%E5%82%80%E5%84%A1%E4%BA%BA.html" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/%E7%94%B5%E5%8A%A8%E4%B8%89%E5%82%BB%E7%9A%84%E8%AF%95%E9%A9%BE%E4%BD%93%E9%AA%8C.html" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">下一篇</strong>
-      <div class="article-nav-title">我是可怜的时空傀儡人</div>
+      <div class="article-nav-title">电动三傻的试驾体验</div>
     </a>
   
 </nav>
@@ -274,7 +267,7 @@ var themeMenus = {};
     <div id="toc" class="toc-article" style="overflow-y: scroll; max-width: 28%;">
     <strong class="toc-title">文章目录</strong>
     
-      <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%A4%A7%E7%BA%B2"><span class="nav-number">1.</span> <span class="nav-text">大纲</span></a></li></ol>
+      <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Change-CentOS-baseURL-to-vault-centos-org"><span class="nav-number">1.</span> <span class="nav-text">Change CentOS baseURL to vault.centos.org</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#why"><span class="nav-number">1.1.</span> <span class="nav-text">why</span></a></li></ol></li></ol>
     
     </div>
   </aside>
